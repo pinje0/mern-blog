@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    font-family: monospace, "Inter", sans-serif;
+}
+
+.Container {
+    /* background-color: rgb(255, 255, 255,0.7); */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Container h1 {
+    color: white;
+    opacity: 0.9;
+}
+
+.content {
+    text-align: left;
+    width: 100%;
+    max-width: 100%;
+    overflow-wrap: break-word;
+}
+
+.time {
+    color: #fff;
+    opacity: 0.7;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.author {
+    font-weight: 600;
+    color: #fff;
+    opacity: 0.7;
+    font-weight: bold;
+}
+.author:hover {
+    text-decoration: underline;
+}
+
+.Content {
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.Content a {
+    text-decoration: underline;
+    color: blue;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+img {
+    max-height: 300px;
+    max-width: 70%;
+}
+
+.buttons {
+    margin: 5px;
+    margin-top: 10px;
+    display: flex;
+}
+
+.btn {
+    background-color: rgb(65, 184, 131);
+    padding: 8px 10px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+.btn:hover {
+    background-color: rgb(65, 184, 131);
+    opacity: 0.8;
+}
+
+input:hover {
+    border: 2px solid rgb(65, 184, 131);
+}
+
+.comment-text {
+    color: #fff;
+    opacity: 0.7;
+    font-weight: bold;
+}
+
+.Comments .btn {
+    margin-top: 5px;
+}
+
+.user {
+    font-weight: 700;
+    font-size: large;
+    color: #fff;
+    opacity: 0.7;
+}
+
+.CommentContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 130px;
+    max-width: 300px;
+    overflow-y: scroll;
+}
+
+.SingleComment {
+    margin: 10px;
+    color: #fff;
+    opacity: 0.7;
+}
+
+.CommentInfo {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    align-items: center;
+}
+
+.CommentDate {
+    color: #fff;
+    opacity: 0.7;
+    font-size: small;
+}

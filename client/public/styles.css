@@ -1,0 +1,13 @@
+/* body{
+    background-image: url('./cool-background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 50px;
+} */
+
+body {
+    background-color: rgb(18, 18, 18);
+    font-family: monospace, "Inter", sans-serif;
+}
