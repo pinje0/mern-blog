@@ -15,12 +15,7 @@ import updatePostRoute from "./routes/updatePost.js"
 dotenv.config()
 
 const app = express()
-const corsOptions = {
-    origin: "https://mern-blog-fe-alpha.vercel.app", // Update this to your frontend domain
-    optionsSuccessStatus: 200, // For legacy browser support
-}
-
-app.use(cors(corsOptions))
+app.use(cors())
 app.use(express.json())
 
 cloudinary.v2.config({
