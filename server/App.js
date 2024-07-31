@@ -36,8 +36,8 @@ app.use("/deletePost", deletePostRoute)
 
 app.use("/updatePost", updatePostRoute)
 
-app.listen(4000, () => {
-    console.log("Listening on port 4000")
+app.listen(process.env.PORT || 4000, () => {
+    console.log(`Listening on port ${process.env.PORT || 4000}`)
 })
 
 mongoose

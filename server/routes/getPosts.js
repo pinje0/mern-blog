@@ -1,14 +1,14 @@
-import  express from "express";
-import { addComment, getPost, getPosts, getUserPosts } from "../controllers/getPosts.js";
+import express from "express"
+import { addComment, getPost, getPosts, getUserPosts } from "../controllers/getPosts.js"
 
-const router = express.Router();
+const router = express.Router()
 
-router.get('/',getPosts);
+router.get("/", getPosts)
 
-router.get('/:id',getPost);
+router.get("/:id", getPost)
 
-router.post('/:id',addComment);
+router.post("/:id", addComment)
 
-router.get('/userposts/:username',getUserPosts);
+router.get("/userposts/:username", getUserPosts)
 
 export default router
